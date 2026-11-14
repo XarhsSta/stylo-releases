@@ -45,8 +45,8 @@ The two hashes must be the same (letter case does not matter). Or, in one line t
 
 Stylo collects nothing. The only request it makes on its own is the update check to GitHub, which
 you can turn off. "Report a bug" opens a pre-filled GitHub issue in your browser, for you to read and
-send yourself. Your documents stay where you save them; settings, unsaved drafts and version history
-stay in `%LOCALAPPDATA%\gr.stylo.app`.
+send yourself. Your documents stay where you save them; settings, unsaved drafts, version history and
+a small local error log stay in `%LOCALAPPDATA%\gr.stylo.app`.
 
 ## Bugs and ideas
 
