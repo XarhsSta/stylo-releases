@@ -6,10 +6,27 @@
     <title>Stylo: a free markdown editor for Windows</title>
     <meta
       name="description"
-      content="Stylo is a free, lightweight markdown editor for Windows, with live preview, a writing view, folders of notes, math, diagrams and PDF export. No account, no telemetry."
+      content="A free markdown editor for Windows, with live preview, a writing view, notes and PDF export. No account, no telemetry."
     />
+    <link rel="canonical" href="https://xarhssta.github.io/stylo-releases/" />
+    <link rel="alternate" hreflang="en" href="https://xarhssta.github.io/stylo-releases/" />
+    <link rel="alternate" hreflang="el" href="https://xarhssta.github.io/stylo-releases/el/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Stylo" />
+    <meta property="og:url" content="https://xarhssta.github.io/stylo-releases/" />
+    <meta property="og:title" content="Stylo: just write. Stylo takes care of the formatting." />
+    <meta
+      property="og:description"
+      content="A free markdown editor for Windows, with live preview, a writing view, notes and PDF export. No account, no telemetry."
+    />
+    <meta property="og:image" content="https://xarhssta.github.io/stylo-releases/images/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Stylo, a free markdown editor for Windows, with a note and its preview side by side." />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="el_GR" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
-    <link rel="alternate" hreflang="el" href="el/" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,9 +35,8 @@
         <a class="brand" href="./"><img src="icon.svg" alt="" width="28" height="28" />Stylo</a>
         <nav aria-label="Sections">
           <a href="#features">Features</a>
-          <a href="#install">Install</a>
+          <a href="#download">Download</a>
           <a href="#faq">FAQ</a>
-          <a href="#privacy">Privacy</a>
           <a href="el/" hreflang="el" lang="el">Ελληνικά</a>
         </nav>
       </div>
@@ -28,223 +44,279 @@
 
     <main>
       <div class="wrap hero">
-        <h1>A calm markdown editor for Windows</h1>
+        <span class="eyebrow">Free markdown editor for Windows</span>
+        <h1>Just write. Stylo takes care of the formatting.</h1>
         <p class="lead">
-          Write plain <code>.md</code> files with a live preview beside them, or in a clean writing view that hides the
-          symbols. Notes, links, math, diagrams and PDF export, in a small, fast app. Free, with no account and no
-          telemetry.
+          Write in plain <code>.md</code> files with the formatted page beside them, or in a clean view without the symbols.
+          Notes, math, diagrams and PDF in one small, fast app. No account, no subscription, no telemetry.
         </p>
-        <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download Stylo</a>
-        <p class="download-note">Free · Windows 10 and 11, 64-bit · installs without administrator rights</p>
-        <img
-          class="shot"
-          src="images/editor-preview.webp"
-          width="1280"
-          height="800"
-          alt="Stylo with a markdown note on the left and its formatted preview on the right: a task list, a table, a tip and a formula."
-        />
+        <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
+        <p class="download-note">Windows 10 and 11, 64-bit · about 7 MB · no administrator rights needed</p>
+        <a class="more" href="#features">See what it does ↓</a>
+        <picture>
+          <source srcset="images/editor-preview-dark.webp" media="(prefers-color-scheme: dark)" />
+          <img
+            class="shot"
+            src="images/editor-preview.webp"
+            width="1280"
+            height="800"
+            alt="Stylo with a markdown note on the left and the formatted page on the right, with a task list, a table and a formula."
+          />
+        </picture>
       </div>
 
       <section id="features">
         <div class="wrap">
-          <h2>What it does</h2>
-          <div class="features">
-            <div class="feature">
-              <h3>Live preview</h3>
-              <p>The formatted page sits next to your text and scrolls with it, block by block.</p>
-            </div>
-            <div class="feature">
-              <h3>Writing view</h3>
-              <p>Just the text, with the markdown symbols hidden. Pick the line width, fade all but the current paragraph, or keep the line in the middle like a typewriter.</p>
-            </div>
-            <div class="feature">
-              <h3>Folders of notes</h3>
-              <p>A Files column with search across every file, <code>#tags</code>, <code>[[links]]</code> between notes and backlinks.</p>
-            </div>
-            <div class="feature">
-              <h3>Rich markdown</h3>
-              <p>Tables, task lists, math with KaTeX, Mermaid diagrams, callouts, footnotes and highlighted code. Right-click to insert them, or to add and remove table rows and columns.</p>
-            </div>
-            <div class="feature">
-              <h3>Export and present</h3>
-              <p>PDF in one step, HTML, formatted text for email or Word, and full-screen slides from your file.</p>
-            </div>
-            <div class="feature">
-              <h3>Safe with your files</h3>
-              <p>Plain <code>.md</code> files, saved safely. Unsaved drafts survive a restart, and every save is kept in a version history.</p>
-            </div>
-            <div class="feature">
-              <h3>Yours to tune</h3>
-              <p>Twelve light and dark themes, your own colours and fonts, shortcuts you can change, and Vim mode. Export your settings to take them to another PC.</p>
-            </div>
-            <div class="feature">
-              <h3>Keyboard first</h3>
-              <p>A command palette, formatting shortcuts (Ctrl+1–6, Ctrl+E…), Back and Forward with Alt+←/→, and F1 for help with every shortcut you have set.</p>
-            </div>
-          </div>
+          <h2>What Stylo does</h2>
 
-          <div class="gallery">
-            <figure>
-              <a href="images/writing.webp"
-                ><img
-                  src="images/writing.webp"
-                  width="1280"
-                  height="800"
-                  loading="lazy"
-                  alt="The writing view: a short story with headings, bold and a list, without markdown symbols."
-              /></a>
-              <figcaption>The writing view</figcaption>
-            </figure>
-            <figure>
-              <a href="images/files.webp"
-                ><img
-                  src="images/files.webp"
-                  width="1280"
-                  height="800"
-                  loading="lazy"
-                  alt="The Files column with a folder tree of notes and their tags, next to the editor and the preview."
-              /></a>
-              <figcaption>The Files column, with tags</figcaption>
-            </figure>
-            <figure>
-              <a href="images/dark-theme.webp"
-                ><img
-                  src="images/dark-theme.webp"
-                  width="1280"
-                  height="800"
-                  loading="lazy"
-                  alt="Stylo in its dark Mint theme, with the editor and the preview."
-              /></a>
-              <figcaption>Dark theme (Mint)</figcaption>
-            </figure>
+          <article class="feature">
+            <div class="feature-text">
+              <h3>Write the way you like</h3>
+              <p>
+                Markdown with the page beside it, scrolling along with you. Or the writing view: just the text, no symbols, at the
+                line width you like, with paragraph focus or typewriter scrolling.
+              </p>
+            </div>
+            <a class="shot" href="images/writing.webp"
+              ><img
+                src="images/writing.webp"
+                width="1280"
+                height="800"
+                loading="lazy"
+                alt="The writing view: a short story with headings, bold and a list, without markdown symbols."
+            /></a>
+          </article>
+
+          <article class="feature">
+            <div class="feature-text">
+              <h3>Keep your notes together</h3>
+              <p>
+                Open a folder and every <code>.md</code> in it is in one column. Search across all files, <code>#tags</code>,
+                <code>[[links like this]]</code> between notes, and which notes point to the one you're in.
+              </p>
+            </div>
+            <a class="shot" href="images/files.webp"
+              ><img
+                src="images/files.webp"
+                width="1280"
+                height="800"
+                loading="lazy"
+                alt="The Files column: a folder of notes as a tree, with its tags below, next to the editor and the preview."
+            /></a>
+          </article>
+
+          <article class="feature">
+            <div class="feature-text">
+              <h3>Share what you made</h3>
+              <p>
+                PDF in one click, HTML, formatted text for email, Word or Teams, and presentation slides from the same file.
+              </p>
+            </div>
+            <a class="shot" href="images/export.webp"
+              ><img
+                src="images/export.webp"
+                width="1280"
+                height="800"
+                loading="lazy"
+                alt="The export menu over a document: HTML, formatted text, PDF, presentation and print."
+            /></a>
+          </article>
+
+          <article class="feature">
+            <div class="feature-text">
+              <h3>Make it yours</h3>
+              <p>
+                Twelve light and dark themes (this one is Mint), your own colours and fonts, shortcuts you can change, and an
+                English or Greek interface.
+              </p>
+            </div>
+            <a class="shot" href="images/dark-theme.webp"
+              ><img
+                src="images/dark-theme.webp"
+                width="1280"
+                height="800"
+                loading="lazy"
+                alt="Stylo in its dark Mint theme, with the editor and the preview."
+            /></a>
+          </article>
+
+          <div class="also">
+            <h3>And also</h3>
+            <ul>
+              <li>Math (KaTeX), Mermaid diagrams, callouts, footnotes</li>
+              <li>A right-click menu with table commands</li>
+              <li>Ctrl+1–6, Ctrl+E and more formatting shortcuts</li>
+              <li>Back and Forward with Alt+←/→</li>
+              <li>Text from Word or the web becomes markdown</li>
+              <li>Version history for every file</li>
+              <li>Drafts that survive a restart</li>
+              <li>F1 for help with every shortcut</li>
+              <li>Settings you can export to another PC</li>
+              <li>Vim mode</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section id="install">
+      <section id="download">
         <div class="wrap">
-          <h2>Install</h2>
+          <h2>Install in a minute</h2>
           <ol class="steps">
             <li>
-              Download <code>Stylo_X.Y.Z_x64-setup.exe</code> from the
+              Download <code>Stylo_…_x64-setup.exe</code> from the
               <a href="https://github.com/XarhsSta/stylo-releases/releases/latest">latest release</a>.
             </li>
-            <li>
-              Run it. Windows will probably show <em>"Windows protected your PC"</em>: click <strong>More info</strong>, then
-              <strong>Run anyway</strong>.
-            </li>
-            <li>Pick English or Greek, and Stylo installs for your user, without administrator rights.</li>
+            <li>Open it. If Windows shows a warning, <a href="#smartscreen">see below</a> for what to click.</li>
+            <li>Pick English or Greek. Stylo installs for your user, without administrator rights, and opens.</li>
           </ol>
-          <div class="note">
-            <p>
-              <strong>Why the warning?</strong> The installer is not code-signed. Stylo is a free, non-profit project, and a
-              signing certificate costs money every year. SmartScreen warns about any unsigned app that few people have
-              downloaded yet.
-            </p>
+          <p class="center">
+            <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
+          </p>
+          <div class="requirements">
+            <h3>System requirements</h3>
+            <ul>
+              <li>Windows 10 or 11, 64-bit</li>
+              <li>Microsoft Edge WebView2: Windows 10 and 11 already have it, and if it's missing, the installer adds it</li>
+            </ul>
           </div>
+        </div>
+      </section>
 
-          <h3 style="margin-top: 28px">Check the download (optional)</h3>
-          <p>
-            Each release has a <code>.sha256</code> file next to the installer. In PowerShell, in the folder you downloaded both
-            to, this prints <code>True</code> when the installer is exactly the one published:
-          </p>
-          <pre><code>(Get-FileHash .\Stylo_1.0.0_x64-setup.exe).Hash -eq (Get-Content .\Stylo_1.0.0_x64-setup.exe.sha256).Split(' ')[0]</code></pre>
-          <p>
-            Or run <code>Get-FileHash .\Stylo_1.0.0_x64-setup.exe</code> and compare the hash with the one in the
-            <code>.sha256</code> file by eye. Use the version number you downloaded.
-          </p>
-
-          <h3 style="margin-top: 28px">System requirements</h3>
-          <ul>
-            <li>Windows 10 or Windows 11, 64-bit.</li>
-            <li>
-              Microsoft Edge WebView2, which Windows 10 and 11 already have. If it is missing, the installer sets it up.
-            </li>
-          </ul>
+      <section id="smartscreen">
+        <div class="wrap smartscreen">
+          <div>
+            <h2>If Windows shows a warning</h2>
+            <p>
+              The first time, SmartScreen may say “Windows protected your PC”. Click <strong>More info</strong>, then
+              <strong>Run anyway</strong>.
+            </p>
+            <div class="note">
+              <p>
+                The installer isn't code-signed: a certificate costs money every year, and Stylo is free. Windows warns about
+                any unsigned app that few people have run yet.
+              </p>
+            </div>
+            <details>
+              <summary>For the curious: check that the file is the right one</summary>
+              <p>
+                Each release has a <code>.sha256</code> next to the installer. In PowerShell, in your downloads folder, this
+                prints <code>True</code>. Use the version number you downloaded.
+              </p>
+              <pre><code>(Get-FileHash .\Stylo_1.0.0_x64-setup.exe).Hash -eq (Get-Content .\Stylo_1.0.0_x64-setup.exe.sha256).Split(' ')[0]</code></pre>
+            </details>
+          </div>
+          <div class="dialogs" aria-label="A sketch of the two SmartScreen screens and where to click">
+            <div class="dialog">
+              <strong>Windows protected your PC</strong>
+              <span>Microsoft Defender SmartScreen prevented an unrecognized app from starting.</span>
+              <span class="click u">More info</span>
+            </div>
+            <div class="dialog">
+              <strong>Windows protected your PC</strong>
+              <span>Publisher: Unknown publisher</span>
+              <span class="click button">Run anyway</span>
+            </div>
+            <span class="sketch-note">A sketch of the two screens. Click what is outlined in yellow.</span>
+          </div>
         </div>
       </section>
 
       <section id="faq">
         <div class="wrap">
           <h2>Questions</h2>
-          <details>
-            <summary>Is it really free?</summary>
-            <p>
-              Yes. No ads, no account, no paid version. Stylo is a non-profit project. You may also share the installer with
-              others, unchanged and for free; you may not sell it. The source code is not public. See the
-              <a href="https://github.com/XarhsSta/stylo-releases/blob/main/LICENSE">licence</a>.
-            </p>
-          </details>
-          <details>
-            <summary>How do updates work?</summary>
-            <p>
-              When it starts, Stylo asks GitHub whether there is a new version, and offers to install it. Nothing is installed
-              without your OK. You can turn the check off in Settings → General → "Check for a new version on startup", use
-              "Check now" there instead, or download new versions yourself from the
-              <a href="https://github.com/XarhsSta/stylo-releases/releases">releases page</a>.
-            </p>
-          </details>
-          <details>
-            <summary>Where is my data?</summary>
-            <ul>
-              <li>Your documents are ordinary <code>.md</code> files, wherever you save them.</li>
-              <li>
-                Settings, unsaved drafts and the version history (the last 50 saves of each file) are in
-                <code>%LOCALAPPDATA%\gr.stylo.app</code>, on your computer, together with a small error log
-                (<code>logs\stylo.log</code>).
-              </li>
-              <li>Settings → General → Export settings saves your settings, themes and shortcuts to a file, for another PC.</li>
-              <li>Nothing is uploaded anywhere.</li>
-            </ul>
-          </details>
-          <details>
-            <summary>How do I uninstall it?</summary>
-            <p>
-              Windows Settings → Apps → Installed apps (on Windows 10: Apps &amp; features) → Stylo → Uninstall. The uninstaller
-              asks whether to delete the application data too: settings, drafts and version history. Your <code>.md</code>
-              files are never touched.
-            </p>
-          </details>
-          <details>
-            <summary>I found a bug, or I have an idea.</summary>
-            <p>
-              Use <strong>Report a bug</strong>: the bug icon in the title bar, Settings → General, or the command palette (Ctrl+Shift+P). It opens a
-              GitHub issue in your browser with the version details already filled in. Ideas are welcome on the
-              <a href="https://github.com/XarhsSta/stylo-releases/issues">issues page</a>.
-            </p>
-          </details>
+          <div class="faq">
+            <div class="faq-col">
+              <details>
+                <summary>Is it really free?</summary>
+                <p>
+                  Yes. No ads, no account, no paid version. It's a personal, non-profit project. You can pass it on to others as
+                  it is; it may not be sold. See the
+                  <a href="https://github.com/XarhsSta/stylo-releases/blob/main/LICENSE">licence</a>.
+                </p>
+              </details>
+              <details>
+                <summary>Can I use it at work?</summary>
+                <p>Yes. The licence allows personal, educational and commercial use.</p>
+              </details>
+              <details>
+                <summary>Does it work offline?</summary>
+                <p>Yes. It only goes online to look for new versions.</p>
+              </details>
+              <details>
+                <summary>Is there a Mac or Linux version?</summary>
+                <p>No, only Windows 10 and 11.</p>
+              </details>
+              <details>
+                <summary>Is it open source?</summary>
+                <p>
+                  No, the source is private. Stylo is built on open-source software, listed with its licences in the
+                  <a href="https://github.com/XarhsSta/stylo-releases/blob/main/THIRD-PARTY-NOTICES.md">third-party notices</a>.
+                </p>
+              </details>
+            </div>
+            <div class="faq-col">
+              <details>
+                <summary>How does it update?</summary>
+                <p>
+                  When it starts, it asks GitHub whether there's a new version and offers to install it. Nothing installs without
+                  your OK. You can turn the check off in Settings → General.
+                </p>
+              </details>
+              <details>
+                <summary>Where is my data?</summary>
+                <p>
+                  Your writing is plain <code>.md</code> files, wherever you save them. Settings, drafts, version history and a
+                  small error log are in <code>%LOCALAPPDATA%\gr.stylo.app</code>. Nothing is uploaded anywhere.
+                </p>
+              </details>
+              <details>
+                <summary>How do I uninstall it?</summary>
+                <p>
+                  Windows Settings → Apps → Installed apps → Stylo → Uninstall. It asks whether to delete settings, drafts and
+                  history too. Your <code>.md</code> files are never touched.
+                </p>
+              </details>
+              <details>
+                <summary>I found a bug, or I have an idea.</summary>
+                <p>
+                  Click the bug icon at the top right of Stylo. It opens a ready GitHub issue for you to read and send. Ideas are
+                  welcome on the <a href="https://github.com/XarhsSta/stylo-releases/issues">issues page</a>.
+                </p>
+              </details>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="privacy">
         <div class="wrap">
-          <h2>Privacy</h2>
-          <ul>
-            <li><strong>No telemetry.</strong> Stylo has no analytics, no crash reporting and no account.</li>
-            <li>
-              <strong>Update checks only.</strong> The one request Stylo makes on its own is the update check to GitHub,
-              which you can turn off in Settings → General. Installing an update downloads it from GitHub.
-            </li>
-            <li>
-              <strong>Bug reports are yours to send.</strong> "Report a bug" opens a pre-filled GitHub issue in your
-              browser, with the Stylo, Windows and WebView2 versions and the interface language. No file names, no file
-              contents. You read it, and you decide whether to send it.
-            </li>
-            <li>
-              <strong>Errors stay on your PC.</strong> Stylo keeps a small error log in
-              <code>%LOCALAPPDATA%\gr.stylo.app\logs</code>. Settings → General → "Copy diagnostics" copies it, for you
-              to paste into a bug report if you want to; read it first, as it may contain file names.
-            </li>
-            <li>
-              <strong>What your documents point to.</strong> Links open in your browser, and images your notes embed from
-              the web are loaded from there. HTML exported with math loads KaTeX's stylesheet from cdn.jsdelivr.net when it
-              is opened.
-            </li>
-            <li>
-              <strong>This website</strong> has no cookies, no analytics and no trackers. It is hosted on GitHub Pages; see
-              <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.
-            </li>
-          </ul>
+          <h2>Your files stay yours</h2>
+          <div class="privacy">
+            <div>
+              <h3>No telemetry</h3>
+              <p>No usage tracking, no account, no crash reports sent behind your back.</p>
+            </div>
+            <div>
+              <h3>Update checks only</h3>
+              <p>
+                The one thing it does online on its own is ask GitHub for a new version. Turn it off in Settings → General.
+              </p>
+            </div>
+            <div>
+              <h3>Bug reports are yours to send</h3>
+              <p>
+                “Report a bug” prepares an issue with the Stylo and Windows versions, with no file names or contents. Errors are
+                logged only on your PC.
+              </p>
+            </div>
+            <div>
+              <h3>This website</h3>
+              <p>No cookies, analytics or trackers. It's hosted on GitHub Pages.</p>
+            </div>
+          </div>
+          <p class="privacy-foot">
+            Whatever your documents point to on the web (links, images) opens or loads from there, as in any browser.
+          </p>
         </div>
       </section>
     </main>
@@ -256,9 +328,11 @@
           <li><a href="https://github.com/XarhsSta/stylo-releases/blob/main/LICENSE">Licence</a></li>
           <li><a href="https://github.com/XarhsSta/stylo-releases/blob/main/THIRD-PARTY-NOTICES.md">Third-party notices</a></li>
           <li><a href="https://github.com/XarhsSta/stylo-releases/issues">Issues</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="https://www.linkedin.com/in/haris-stasinos/">LinkedIn</a></li>
           <li><a href="el/" hreflang="el" lang="el">Ελληνικά</a></li>
         </ul>
-        <p>© 2026 Haris Stasinos. Stylo is freeware: free to use and share, not open source.</p>
+        <p>© 2026 Haris Stasinos · Free to use and share, not open source.</p>
       </div>
     </footer>
   </body>
