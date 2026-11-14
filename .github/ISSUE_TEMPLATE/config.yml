@@ -1,0 +1,9 @@
+# Blank issues stay enabled: Stylo's "Report a bug" opens /issues/new with the text already filled in.
+blank_issues_enabled: true
+contact_links:
+  - name: Download Stylo
+    url: https://github.com/XarhsSta/stylo-releases/releases/latest
+    about: The latest installer, its SHA-256 and the release notes.
+  - name: Website and FAQ
+    url: https://xarhssta.github.io/stylo-releases/
+    about: Installing, SmartScreen, updates, where your data is, uninstalling.
