@@ -1,0 +1,53 @@
+Stylo Freeware Licence
+
+Copyright © 2026 Haris Stasinos. All rights reserved.
+
+Stylo is free software in the sense of "free of charge". It is not open source:
+its source code is private and is not covered by this licence.
+
+1. What you may do
+
+   You may download, install and use Stylo on any number of computers, for
+   personal, educational or commercial work, at no cost.
+
+   You may share copies of Stylo with others, as long as each copy is the
+   unmodified installer published at
+   https://github.com/XarhsSta/stylo-releases, it includes this licence, and
+   you charge nothing for it.
+
+2. What you may not do
+
+   - Sell Stylo, rent it, or include it in anything you sell or charge for.
+   - Modify, adapt or translate Stylo, or distribute a modified copy.
+   - Reverse engineer, decompile or disassemble Stylo, except where the law
+     allows it despite this restriction.
+   - Remove or change any copyright notice, this licence or the third-party
+     notices.
+   - Present Stylo, or any part of it, as your own work.
+
+3. Third-party software
+
+   Stylo includes open-source components. Each of them remains under its own
+   licence, listed in THIRD-PARTY-NOTICES.md. Nothing in this licence limits
+   the rights those licences give you over those components.
+
+4. No warranty
+
+   Stylo is provided "as is", without warranty of any kind, express or
+   implied, including but not limited to the warranties of merchantability,
+   fitness for a particular purpose and non-infringement. You use it at your
+   own risk. Keep backups of your files.
+
+5. Limitation of liability
+
+   To the fullest extent permitted by law, in no event shall the author be
+   liable for any claim, damages or other liability, whether in an action of
+   contract, tort or otherwise, arising from, out of or in connection with
+   Stylo or the use of, or inability to use, Stylo, including loss of data.
+
+6. Termination
+
+   This licence ends automatically if you break its terms. You must then
+   stop distributing Stylo. The author may publish new versions of Stylo
+   under different terms; this licence still applies to the versions
+   published under it.
