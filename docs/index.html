@@ -55,7 +55,7 @@
             </div>
             <div class="feature">
               <h3>Writing view</h3>
-              <p>Just the text, with the markdown symbols hidden. Focus on the paragraph, or keep the line in the middle.</p>
+              <p>Just the text, with the markdown symbols hidden. Pick the line width, fade all but the current paragraph, or keep the line in the middle like a typewriter.</p>
             </div>
             <div class="feature">
               <h3>Folders of notes</h3>
@@ -63,7 +63,7 @@
             </div>
             <div class="feature">
               <h3>Rich markdown</h3>
-              <p>Tables, task lists, math with KaTeX, Mermaid diagrams, callouts, footnotes and highlighted code.</p>
+              <p>Tables, task lists, math with KaTeX, Mermaid diagrams, callouts, footnotes and highlighted code. Right-click to insert them, or to add and remove table rows and columns.</p>
             </div>
             <div class="feature">
               <h3>Export and present</h3>
@@ -75,11 +75,11 @@
             </div>
             <div class="feature">
               <h3>Yours to tune</h3>
-              <p>Twelve light and dark themes, your own colours and fonts, shortcuts you can change, and Vim mode.</p>
+              <p>Twelve light and dark themes, your own colours and fonts, shortcuts you can change, and Vim mode. Export your settings to take them to another PC.</p>
             </div>
             <div class="feature">
               <h3>Keyboard first</h3>
-              <p>A command palette for everything, quick open, find in files, and text pasted from the web becomes markdown.</p>
+              <p>A command palette, formatting shortcuts (Ctrl+1–6, Ctrl+E…), Back and Forward with Alt+←/→, and F1 for help with every shortcut you have set.</p>
             </div>
           </div>
 
@@ -190,8 +190,10 @@
               <li>Your documents are ordinary <code>.md</code> files, wherever you save them.</li>
               <li>
                 Settings, unsaved drafts and the version history (the last 50 saves of each file) are in
-                <code>%LOCALAPPDATA%\gr.stylo.app</code>, on your computer.
+                <code>%LOCALAPPDATA%\gr.stylo.app</code>, on your computer, together with a small error log
+                (<code>logs\stylo.log</code>).
               </li>
+              <li>Settings → General → Export settings saves your settings, themes and shortcuts to a file, for another PC.</li>
               <li>Nothing is uploaded anywhere.</li>
             </ul>
           </details>
@@ -227,6 +229,11 @@
               <strong>Bug reports are yours to send.</strong> "Report a bug" opens a pre-filled GitHub issue in your
               browser, with the Stylo, Windows and WebView2 versions and the interface language. No file names, no file
               contents. You read it, and you decide whether to send it.
+            </li>
+            <li>
+              <strong>Errors stay on your PC.</strong> Stylo keeps a small error log in
+              <code>%LOCALAPPDATA%\gr.stylo.app\logs</code>. Settings → General → "Copy diagnostics" copies it, for you
+              to paste into a bug report if you want to; read it first, as it may contain file names.
             </li>
             <li>
               <strong>What your documents point to.</strong> Links open in your browser, and images your notes embed from

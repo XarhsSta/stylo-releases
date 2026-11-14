@@ -27,3 +27,5 @@ Please don't attach private documents; a small sample that shows the problem is 
 - <!-- Windows version, e.g. Windows 11 23H2 -->
 - WebView2 <!-- if you know it -->
 - Interface language: <!-- en or el -->
+
+<!-- If Stylo showed an error: Settings → General → Copy diagnostics, then paste them here (check them first). -->
