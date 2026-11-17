@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stylo: δωρεάν markdown editor για Windows</title>
+    <title>Stylo: δωρεάν markdown editor για Windows και Linux</title>
     <meta
       name="description"
-      content="Δωρεάν markdown editor για Windows, με ζωντανή προεπισκόπηση, προβολή γραφής, σημειώσεις και PDF. Χωρίς λογαριασμό, χωρίς telemetry."
+      content="Δωρεάν markdown editor για Windows και Linux, με ζωντανή προεπισκόπηση, προβολή γραφής, σημειώσεις και PDF. Χωρίς λογαριασμό, χωρίς telemetry."
     />
     <link rel="canonical" href="https://xarhssta.github.io/stylo-releases/el/" />
     <link rel="alternate" hreflang="en" href="https://xarhssta.github.io/stylo-releases/" />
@@ -17,12 +17,12 @@
     <meta property="og:title" content="Stylo: απλώς γράψε. Τη μορφοποίηση την αναλαμβάνει το Stylo." />
     <meta
       property="og:description"
-      content="Δωρεάν markdown editor για Windows, με ζωντανή προεπισκόπηση, προβολή γραφής, σημειώσεις και PDF. Χωρίς λογαριασμό, χωρίς telemetry."
+      content="Δωρεάν markdown editor για Windows και Linux, με ζωντανή προεπισκόπηση, προβολή γραφής, σημειώσεις και PDF. Χωρίς λογαριασμό, χωρίς telemetry."
     />
     <meta property="og:image" content="https://xarhssta.github.io/stylo-releases/images/og-el.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Το Stylo, δωρεάν markdown editor για Windows, με μια σημείωση και την προεπισκόπησή της." />
+    <meta property="og:image:alt" content="Το Stylo, δωρεάν markdown editor για Windows και Linux, με μια σημείωση και την προεπισκόπησή της." />
     <meta property="og:locale" content="el_GR" />
     <meta property="og:locale:alternate" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,15 +44,23 @@
 
     <main>
       <div class="wrap hero">
-        <span class="eyebrow">Δωρεάν markdown editor για Windows</span>
+        <span class="eyebrow">Δωρεάν markdown editor για Windows και Linux</span>
         <h1>Απλώς γράψε. Τη μορφοποίηση την αναλαμβάνει το Stylo.</h1>
         <p class="lead">
           Γράφεις σε απλά αρχεία <code>.md</code> με τη μορφοποιημένη σελίδα δίπλα, ή σε μια καθαρή προβολή χωρίς σύμβολα.
           Σημειώσεις, μαθηματικά, διαγράμματα και PDF σε μια μικρή, γρήγορη εφαρμογή. Χωρίς λογαριασμό, χωρίς συνδρομή, χωρίς
           telemetry.
         </p>
-        <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Λήψη για Windows</a>
-        <p class="download-note">Windows 10 και 11, 64-bit · περίπου 7 MB · χωρίς δικαιώματα διαχειριστή</p>
+        <div class="downloads">
+          <div class="download-option windows">
+            <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Λήψη για Windows</a>
+            <p class="download-note">Windows 10 και 11, 64-bit · περίπου 7 MB · χωρίς δικαιώματα διαχειριστή</p>
+          </div>
+          <div class="download-option linux">
+            <a class="download" href="#linux">Λήψη για Linux (beta)</a>
+            <p class="download-note">Ubuntu, Debian, Fedora και άλλα, 64-bit · AppImage, .deb ή .rpm</p>
+          </div>
+        </div>
         <a class="more" href="#features">Δες τι κάνει ↓</a>
         <picture>
           <source srcset="../images/editor-preview-dark.webp" media="(prefers-color-scheme: dark)" />
@@ -172,15 +180,46 @@
             <li>Άνοιξέ το. Αν τα Windows δείξουν προειδοποίηση, <a href="#smartscreen">δες παρακάτω</a> τι να πατήσεις.</li>
             <li>Διάλεξε ελληνικά ή αγγλικά. Το Stylo εγκαθίσταται για τον χρήστη σου, χωρίς δικαιώματα διαχειριστή, και ανοίγει.</li>
           </ol>
-          <p class="center">
-            <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Λήψη για Windows</a>
-          </p>
+          <div class="downloads">
+            <div class="download-option windows">
+              <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Λήψη για Windows</a>
+              <p class="download-note">Windows 10 και 11, 64-bit · περίπου 7 MB · χωρίς δικαιώματα διαχειριστή</p>
+            </div>
+            <div class="download-option linux">
+              <a class="download" href="#linux">Λήψη για Linux (beta)</a>
+              <p class="download-note">Ubuntu, Debian, Fedora και άλλα, 64-bit · AppImage, .deb ή .rpm</p>
+            </div>
+          </div>
           <div class="requirements">
             <h3>Απαιτήσεις</h3>
             <ul>
               <li>Windows 10 ή 11, 64-bit</li>
               <li>Microsoft Edge WebView2: υπάρχει ήδη στα Windows 10 και 11, κι αν λείπει, το βάζει ο installer</li>
             </ul>
+          </div>
+          <div class="requirements linux" id="linux">
+            <h3>Linux (beta)</h3>
+            <p>Διάλεξε το αρχείο για το σύστημά σου. Το καθένα ενημερώνεται μόνο του με το ίδιο είδος αρχείου.</p>
+            <ul class="linux-files">
+              <li>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.deb"><strong>.deb</strong></a> για Ubuntu, Debian, Linux Mint και Pop!_OS:
+                <pre><code>sudo apt install ./Stylo-Linux.deb</code></pre>
+              </li>
+              <li>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.rpm"><strong>.rpm</strong></a> για Fedora και openSUSE:
+                <pre><code>sudo dnf install ./Stylo-Linux.rpm</code></pre>
+              </li>
+              <li>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.AppImage"><strong>AppImage</strong></a> για κάθε άλλη διανομή, χωρίς εγκατάσταση
+                (περίπου 90 MB). Στο Ubuntu 24.04 θέλει και το <code>libfuse2t64</code>.
+                <pre><code>chmod +x Stylo-Linux.AppImage &amp;&amp; ./Stylo-Linux.AppImage</code></pre>
+              </li>
+            </ul>
+            <p class="linux-needs">
+              Θέλει σύστημα 64-bit (x86_64) από το 2022 περίπου και μετά: Ubuntu 22.04, Debian 12, Fedora 37 ή νεότερο. Δεν υπάρχουν
+              ακόμα στο Linux: προτάσεις ορθογραφίας και αριθμοί σελίδων στο PDF. Κάτι δεν δουλεύει; Το ζουζούνι στη γραμμή
+              τίτλου ετοιμάζει μια αναφορά.
+            </p>
           </div>
         </div>
       </section>
@@ -247,7 +286,7 @@
               </details>
               <details>
                 <summary>Υπάρχει για Mac ή Linux;</summary>
-                <p>Όχι, μόνο για Windows 10 και 11.</p>
+                <p>Για Linux ναι, σε beta: δες <a href="#linux">Linux (beta)</a>. Για Mac όχι.</p>
               </details>
               <details>
                 <summary>Είναι ανοιχτού κώδικα;</summary>
@@ -337,5 +376,11 @@
         <p>© 2026 Haris Stasinos · Δωρεάν για χρήση και διανομή, όχι ανοιχτού κώδικα.</p>
       </div>
     </footer>
+    <script>
+      // On Linux the Linux button comes first and is the main one; everywhere else, Windows.
+      if (/Linux/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
+        document.documentElement.classList.add("on-linux");
+      }
+    </script>
   </body>
 </html>

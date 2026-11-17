@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stylo: a free markdown editor for Windows</title>
+    <title>Stylo: a free markdown editor for Windows and Linux</title>
     <meta
       name="description"
-      content="A free markdown editor for Windows, with live preview, a writing view, notes and PDF export. No account, no telemetry."
+      content="A free markdown editor for Windows and Linux, with live preview, a writing view, notes and PDF export. No account, no telemetry."
     />
     <link rel="canonical" href="https://xarhssta.github.io/stylo-releases/" />
     <link rel="alternate" hreflang="en" href="https://xarhssta.github.io/stylo-releases/" />
@@ -17,12 +17,12 @@
     <meta property="og:title" content="Stylo: just write. Stylo takes care of the formatting." />
     <meta
       property="og:description"
-      content="A free markdown editor for Windows, with live preview, a writing view, notes and PDF export. No account, no telemetry."
+      content="A free markdown editor for Windows and Linux, with live preview, a writing view, notes and PDF export. No account, no telemetry."
     />
     <meta property="og:image" content="https://xarhssta.github.io/stylo-releases/images/og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Stylo, a free markdown editor for Windows, with a note and its preview side by side." />
+    <meta property="og:image:alt" content="Stylo, a free markdown editor for Windows and Linux, with a note and its preview side by side." />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:locale:alternate" content="el_GR" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,14 +44,22 @@
 
     <main>
       <div class="wrap hero">
-        <span class="eyebrow">Free markdown editor for Windows</span>
+        <span class="eyebrow">Free markdown editor for Windows and Linux</span>
         <h1>Just write. Stylo takes care of the formatting.</h1>
         <p class="lead">
           Write in plain <code>.md</code> files with the formatted page beside them, or in a clean view without the symbols.
           Notes, math, diagrams and PDF in one small, fast app. No account, no subscription, no telemetry.
         </p>
-        <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
-        <p class="download-note">Windows 10 and 11, 64-bit · about 7 MB · no administrator rights needed</p>
+        <div class="downloads">
+          <div class="download-option windows">
+            <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
+            <p class="download-note">Windows 10 and 11, 64-bit · about 7 MB · no administrator rights needed</p>
+          </div>
+          <div class="download-option linux">
+            <a class="download" href="#linux">Download for Linux (beta)</a>
+            <p class="download-note">Ubuntu, Debian, Fedora and more, 64-bit · AppImage, .deb or .rpm</p>
+          </div>
+        </div>
         <a class="more" href="#features">See what it does ↓</a>
         <picture>
           <source srcset="images/editor-preview-dark.webp" media="(prefers-color-scheme: dark)" />
@@ -169,15 +177,46 @@
             <li>Open it. If Windows shows a warning, <a href="#smartscreen">see below</a> for what to click.</li>
             <li>Pick English or Greek. Stylo installs for your user, without administrator rights, and opens.</li>
           </ol>
-          <p class="center">
-            <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
-          </p>
+          <div class="downloads">
+            <div class="download-option windows">
+              <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
+              <p class="download-note">Windows 10 and 11, 64-bit · about 7 MB · no administrator rights needed</p>
+            </div>
+            <div class="download-option linux">
+              <a class="download" href="#linux">Download for Linux (beta)</a>
+              <p class="download-note">Ubuntu, Debian, Fedora and more, 64-bit · AppImage, .deb or .rpm</p>
+            </div>
+          </div>
           <div class="requirements">
             <h3>System requirements</h3>
             <ul>
               <li>Windows 10 or 11, 64-bit</li>
               <li>Microsoft Edge WebView2: Windows 10 and 11 already have it, and if it's missing, the installer adds it</li>
             </ul>
+          </div>
+          <div class="requirements linux" id="linux">
+            <h3>Linux (beta)</h3>
+            <p>Pick the file for your system. Each one updates itself with the same kind of file.</p>
+            <ul class="linux-files">
+              <li>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.deb"><strong>.deb</strong></a> for Ubuntu, Debian, Linux Mint and Pop!_OS:
+                <pre><code>sudo apt install ./Stylo-Linux.deb</code></pre>
+              </li>
+              <li>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.rpm"><strong>.rpm</strong></a> for Fedora and openSUSE:
+                <pre><code>sudo dnf install ./Stylo-Linux.rpm</code></pre>
+              </li>
+              <li>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.AppImage"><strong>AppImage</strong></a> for any other distribution, without installing
+                (about 90 MB). On Ubuntu 24.04 it also needs <code>libfuse2t64</code>.
+                <pre><code>chmod +x Stylo-Linux.AppImage &amp;&amp; ./Stylo-Linux.AppImage</code></pre>
+              </li>
+            </ul>
+            <p class="linux-needs">
+              Needs a 64-bit (x86_64) system from about 2022 on: Ubuntu 22.04, Debian 12, Fedora 37 or newer. Not there yet on
+              Linux: spelling suggestions and page numbers in PDFs. Something wrong? The bug icon in the title bar prepares a
+              report.
+            </p>
           </div>
         </div>
       </section>
@@ -244,7 +283,7 @@
               </details>
               <details>
                 <summary>Is there a Mac or Linux version?</summary>
-                <p>No, only Windows 10 and 11.</p>
+                <p>Linux, yes: a beta, see <a href="#linux">Linux (beta)</a>. Mac, no.</p>
               </details>
               <details>
                 <summary>Is it open source?</summary>
@@ -335,5 +374,11 @@
         <p>© 2026 Haris Stasinos · Free to use and share, not open source.</p>
       </div>
     </footer>
+    <script>
+      // On Linux the Linux button comes first and is the main one; everywhere else, Windows.
+      if (/Linux/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
+        document.documentElement.classList.add("on-linux");
+      }
+    </script>
   </body>
 </html>
