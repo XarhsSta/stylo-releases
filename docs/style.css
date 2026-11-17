@@ -176,6 +176,49 @@ h3 {
 .download:hover {
   filter: brightness(1.1);
 }
+/* Two buttons: the visitor's system first and filled, the other one outlined (the script in each page) */
+.downloads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+}
+.download-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+}
+.download-option.linux .download,
+.on-linux .download-option.windows .download {
+  background: transparent;
+  color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+.on-linux .download-option.linux .download {
+  background: var(--accent);
+  color: var(--accent-fg);
+  box-shadow: var(--shadow);
+}
+.on-linux .download-option.linux {
+  order: -1;
+}
+.linux-files {
+  display: grid;
+  gap: 10px;
+}
+.linux-files li {
+  min-width: 0; /* a long command scrolls inside its box, not the whole page */
+}
+.linux-files pre {
+  margin: 6px 0 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.linux-needs {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
 .download-note {
   margin: 14px 0 6px;
   font-size: 0.92rem;
