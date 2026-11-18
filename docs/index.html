@@ -53,7 +53,7 @@
         <div class="downloads">
           <div class="download-option windows">
             <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
-            <p class="download-note">Windows 10 and 11, 64-bit · about 7 MB · no administrator rights needed</p>
+            <p class="download-note">Windows 10 and 11, 64-bit · about 10 MB · no administrator rights needed</p>
           </div>
           <div class="download-option linux">
             <a class="download" href="#linux">Download for Linux (beta)</a>
@@ -117,7 +117,7 @@
             <div class="feature-text">
               <h3>Share what you made</h3>
               <p>
-                PDF in one click, HTML, and formatted text for email, Word or Teams.
+                PDF in one click, Word (.docx), HTML, and formatted text for email or Teams.
               </p>
             </div>
             <a class="shot" href="images/export.webp"
@@ -126,7 +126,7 @@
                 width="1280"
                 height="800"
                 loading="lazy"
-                alt="The export menu over a document: HTML, formatted text, PDF and print."
+                alt="Stylo’s menu with Export open: PDF, Word, print, copy for email or Word, and web page."
             /></a>
           </article>
 
@@ -180,43 +180,34 @@
           <div class="downloads">
             <div class="download-option windows">
               <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
-              <p class="download-note">Windows 10 and 11, 64-bit · about 7 MB · no administrator rights needed</p>
+              <p class="download-note">Windows 10 and 11, 64-bit · about 10 MB · no administrator rights needed</p>
             </div>
             <div class="download-option linux">
               <a class="download" href="#linux">Download for Linux (beta)</a>
               <p class="download-note">Ubuntu, Debian, Fedora and more, 64-bit · AppImage, .deb or .rpm</p>
             </div>
           </div>
-          <div class="requirements">
-            <h3>System requirements</h3>
-            <ul>
-              <li>Windows 10 or 11, 64-bit</li>
-              <li>Microsoft Edge WebView2: Windows 10 and 11 already have it, and if it's missing, the installer adds it</li>
-            </ul>
-          </div>
-          <div class="requirements linux" id="linux">
-            <h3>Linux (beta)</h3>
-            <p>Pick the file for your system. Each one updates itself with the same kind of file.</p>
-            <ul class="linux-files">
-              <li>
-                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.deb"><strong>.deb</strong></a> for Ubuntu, Debian, Linux Mint and Pop!_OS:
-                <pre><code>sudo apt install ./Stylo-Linux.deb</code></pre>
-              </li>
-              <li>
-                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.rpm"><strong>.rpm</strong></a> for Fedora and openSUSE:
-                <pre><code>sudo dnf install ./Stylo-Linux.rpm</code></pre>
-              </li>
-              <li>
-                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.AppImage"><strong>AppImage</strong></a> for any other distribution, without installing
-                (about 90 MB). On Ubuntu 24.04 it also needs <code>libfuse2t64</code>.
-                <pre><code>chmod +x Stylo-Linux.AppImage &amp;&amp; ./Stylo-Linux.AppImage</code></pre>
-              </li>
-            </ul>
-            <p class="linux-needs">
-              Needs a 64-bit (x86_64) system from about 2022 on: Ubuntu 22.04, Debian 12, Fedora 37 or newer. Not there yet on
-              Linux: spelling suggestions and page numbers in PDFs. Something wrong? The bug icon in the title bar prepares a
-              report.
-            </p>
+          <div class="requirements-pair">
+            <div class="requirements">
+              <h3>Windows</h3>
+              <ul>
+                <li>Windows 10 or 11, 64-bit</li>
+                <li>Microsoft Edge WebView2: Windows 10 and 11 already have it, and if it's missing, the installer adds it</li>
+                <li>About 10 MB, no administrator rights needed</li>
+              </ul>
+            </div>
+            <div class="requirements linux" id="linux">
+              <h3>Linux (beta)</h3>
+              <div class="linux-files">
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.deb"><strong>.deb</strong> · Ubuntu, Debian, Mint</a>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.rpm"><strong>.rpm</strong> · Fedora, openSUSE</a>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.AppImage"><strong>AppImage</strong> · any other</a>
+              </div>
+              <ul>
+                <li>Ubuntu 22.04, Debian 12, Fedora 37 or newer, 64-bit</li>
+                <li>Not there yet on Linux: spelling suggestions and page numbers in PDFs</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

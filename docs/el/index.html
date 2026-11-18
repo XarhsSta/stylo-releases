@@ -54,7 +54,7 @@
         <div class="downloads">
           <div class="download-option windows">
             <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Λήψη για Windows</a>
-            <p class="download-note">Windows 10 και 11, 64-bit · περίπου 7 MB · χωρίς δικαιώματα διαχειριστή</p>
+            <p class="download-note">Windows 10 και 11, 64-bit · περίπου 10 MB · χωρίς δικαιώματα διαχειριστή</p>
           </div>
           <div class="download-option linux">
             <a class="download" href="#linux">Λήψη για Linux (beta)</a>
@@ -119,7 +119,7 @@
             <div class="feature-text">
               <h3>Μοιράσου το αποτέλεσμα</h3>
               <p>
-                PDF με ένα κλικ, HTML, και μορφοποιημένο κείμενο για email, Word ή Teams.
+                PDF με ένα κλικ, Word (.docx), HTML, και μορφοποιημένο κείμενο για email ή Teams.
               </p>
             </div>
             <a class="shot" href="../images/export.webp"
@@ -128,7 +128,7 @@
                 width="1280"
                 height="800"
                 loading="lazy"
-                alt="Το μενού εξαγωγής πάνω από ένα έγγραφο: HTML, μορφοποιημένο κείμενο, PDF και εκτύπωση."
+                alt="Το μενού του Stylo με ανοιχτή την Εξαγωγή: PDF, Word, εκτύπωση, αντιγραφή για email ή Word, και ιστοσελίδα."
             /></a>
           </article>
 
@@ -182,43 +182,34 @@
           <div class="downloads">
             <div class="download-option windows">
               <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Λήψη για Windows</a>
-              <p class="download-note">Windows 10 και 11, 64-bit · περίπου 7 MB · χωρίς δικαιώματα διαχειριστή</p>
+              <p class="download-note">Windows 10 και 11, 64-bit · περίπου 10 MB · χωρίς δικαιώματα διαχειριστή</p>
             </div>
             <div class="download-option linux">
               <a class="download" href="#linux">Λήψη για Linux (beta)</a>
               <p class="download-note">Ubuntu, Debian, Fedora και άλλα, 64-bit · AppImage, .deb ή .rpm</p>
             </div>
           </div>
-          <div class="requirements">
-            <h3>Απαιτήσεις</h3>
-            <ul>
-              <li>Windows 10 ή 11, 64-bit</li>
-              <li>Microsoft Edge WebView2: υπάρχει ήδη στα Windows 10 και 11, κι αν λείπει, το βάζει ο installer</li>
-            </ul>
-          </div>
-          <div class="requirements linux" id="linux">
-            <h3>Linux (beta)</h3>
-            <p>Διάλεξε το αρχείο για το σύστημά σου. Το καθένα ενημερώνεται μόνο του με το ίδιο είδος αρχείου.</p>
-            <ul class="linux-files">
-              <li>
-                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.deb"><strong>.deb</strong></a> για Ubuntu, Debian, Linux Mint και Pop!_OS:
-                <pre><code>sudo apt install ./Stylo-Linux.deb</code></pre>
-              </li>
-              <li>
-                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.rpm"><strong>.rpm</strong></a> για Fedora και openSUSE:
-                <pre><code>sudo dnf install ./Stylo-Linux.rpm</code></pre>
-              </li>
-              <li>
-                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.AppImage"><strong>AppImage</strong></a> για κάθε άλλη διανομή, χωρίς εγκατάσταση
-                (περίπου 90 MB). Στο Ubuntu 24.04 θέλει και το <code>libfuse2t64</code>.
-                <pre><code>chmod +x Stylo-Linux.AppImage &amp;&amp; ./Stylo-Linux.AppImage</code></pre>
-              </li>
-            </ul>
-            <p class="linux-needs">
-              Θέλει σύστημα 64-bit (x86_64) από το 2022 περίπου και μετά: Ubuntu 22.04, Debian 12, Fedora 37 ή νεότερο. Δεν υπάρχουν
-              ακόμα στο Linux: προτάσεις ορθογραφίας και αριθμοί σελίδων στο PDF. Κάτι δεν δουλεύει; Το ζουζούνι στη γραμμή
-              τίτλου ετοιμάζει μια αναφορά.
-            </p>
+          <div class="requirements-pair">
+            <div class="requirements">
+              <h3>Windows</h3>
+              <ul>
+                <li>Windows 10 ή 11, 64-bit</li>
+                <li>Microsoft Edge WebView2: υπάρχει ήδη στα Windows 10 και 11, κι αν λείπει, το βάζει ο installer</li>
+                <li>Περίπου 10 MB, χωρίς δικαιώματα διαχειριστή</li>
+              </ul>
+            </div>
+            <div class="requirements linux" id="linux">
+              <h3>Linux (beta)</h3>
+              <div class="linux-files">
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.deb"><strong>.deb</strong> · Ubuntu, Debian, Mint</a>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.rpm"><strong>.rpm</strong> · Fedora, openSUSE</a>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.AppImage"><strong>AppImage</strong> · όλα τα άλλα</a>
+              </div>
+              <ul>
+                <li>Ubuntu 22.04, Debian 12, Fedora 37 ή νεότερο, 64-bit</li>
+                <li>Δεν υπάρχουν ακόμα στο Linux: προτάσεις ορθογραφίας και αριθμοί σελίδων στο PDF</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

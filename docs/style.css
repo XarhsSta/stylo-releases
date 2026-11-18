@@ -203,21 +203,29 @@ h3 {
 .on-linux .download-option.linux {
   order: -1;
 }
-.linux-files {
+/* Requirements: Windows and Linux (beta) side by side, one under the other on a phone */
+.requirements-pair {
   display: grid;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 8px 40px;
 }
-.linux-files li {
-  min-width: 0; /* a long command scrolls inside its box, not the whole page */
+/* One outlined button per Linux file */
+.linux-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 14px;
 }
-.linux-files pre {
-  margin: 6px 0 0;
-  max-width: 100%;
-  overflow-x: auto;
-}
-.linux-needs {
-  color: var(--muted);
+.linux-files a {
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px var(--accent);
+  color: var(--accent);
   font-size: 0.92rem;
+  text-decoration: none;
+}
+.linux-files a:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
 }
 .download-note {
   margin: 14px 0 6px;
