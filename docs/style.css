@@ -176,6 +176,57 @@ h3 {
 .download:hover {
   filter: brightness(1.1);
 }
+/* Two buttons: the visitor's system first and filled, the other one outlined (the script in each page) */
+.downloads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+}
+.download-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+}
+.download-option.linux .download,
+.on-linux .download-option.windows .download {
+  background: transparent;
+  color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+.on-linux .download-option.linux .download {
+  background: var(--accent);
+  color: var(--accent-fg);
+  box-shadow: var(--shadow);
+}
+.on-linux .download-option.linux {
+  order: -1;
+}
+/* Requirements: Windows and Linux (beta) side by side, one under the other on a phone */
+.requirements-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 8px 40px;
+}
+/* One outlined button per Linux file */
+.linux-files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 14px;
+}
+.linux-files a {
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 2px var(--accent);
+  color: var(--accent);
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.linux-files a:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
 .download-note {
   margin: 14px 0 6px;
   font-size: 0.92rem;

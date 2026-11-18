@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stylo: a free markdown editor for Windows</title>
+    <title>Stylo: a free markdown editor for Windows and Linux</title>
     <meta
       name="description"
-      content="A free markdown editor for Windows, with live preview, a writing view, notes and PDF export. No account, no telemetry."
+      content="A free markdown editor for Windows and Linux, with live preview, a writing view, notes and PDF export. No account, no telemetry."
     />
     <link rel="canonical" href="https://xarhssta.github.io/stylo-releases/" />
     <link rel="alternate" hreflang="en" href="https://xarhssta.github.io/stylo-releases/" />
@@ -17,12 +17,12 @@
     <meta property="og:title" content="Stylo: just write. Stylo takes care of the formatting." />
     <meta
       property="og:description"
-      content="A free markdown editor for Windows, with live preview, a writing view, notes and PDF export. No account, no telemetry."
+      content="A free markdown editor for Windows and Linux, with live preview, a writing view, notes and PDF export. No account, no telemetry."
     />
     <meta property="og:image" content="https://xarhssta.github.io/stylo-releases/images/og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Stylo, a free markdown editor for Windows, with a note and its preview side by side." />
+    <meta property="og:image:alt" content="Stylo, a free markdown editor for Windows and Linux, with a note and its preview side by side." />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:locale:alternate" content="el_GR" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,14 +44,22 @@
 
     <main>
       <div class="wrap hero">
-        <span class="eyebrow">Free markdown editor for Windows</span>
+        <span class="eyebrow">Free markdown editor for Windows and Linux</span>
         <h1>Just write. Stylo takes care of the formatting.</h1>
         <p class="lead">
           Write in plain <code>.md</code> files with the formatted page beside them, or in a clean view without the symbols.
           Notes, math, diagrams and PDF in one small, fast app. No account, no subscription, no telemetry.
         </p>
-        <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
-        <p class="download-note">Windows 10 and 11, 64-bit · about 7 MB · no administrator rights needed</p>
+        <div class="downloads">
+          <div class="download-option windows">
+            <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
+            <p class="download-note">Windows 10 and 11, 64-bit · about 10 MB · no administrator rights needed</p>
+          </div>
+          <div class="download-option linux">
+            <a class="download" href="#linux">Download for Linux (beta)</a>
+            <p class="download-note">Ubuntu, Debian, Fedora and more, 64-bit · AppImage, .deb or .rpm</p>
+          </div>
+        </div>
         <a class="more" href="#features">See what it does ↓</a>
         <picture>
           <source srcset="images/editor-preview-dark.webp" media="(prefers-color-scheme: dark)" />
@@ -91,7 +99,7 @@
             <div class="feature-text">
               <h3>Keep your notes together</h3>
               <p>
-                Open a folder and every <code>.md</code> in it is in one column. Search across all files, <code>#tags</code>,
+                Open a folder and every <code>.md</code> in it is in one column. Search across all files,
                 <code>[[links like this]]</code> between notes, and which notes point to the one you're in.
               </p>
             </div>
@@ -101,7 +109,7 @@
                 width="1280"
                 height="800"
                 loading="lazy"
-                alt="The Files column: a folder of notes as a tree, with its tags below, next to the editor and the preview."
+                alt="The Files column: a folder of notes as a tree, next to the editor and the preview."
             /></a>
           </article>
 
@@ -109,7 +117,7 @@
             <div class="feature-text">
               <h3>Share what you made</h3>
               <p>
-                PDF in one click, HTML, formatted text for email, Word or Teams, and presentation slides from the same file.
+                PDF in one click, Word (.docx), HTML, and formatted text for email or Teams.
               </p>
             </div>
             <a class="shot" href="images/export.webp"
@@ -118,7 +126,7 @@
                 width="1280"
                 height="800"
                 loading="lazy"
-                alt="The export menu over a document: HTML, formatted text, PDF, presentation and print."
+                alt="Stylo’s menu with Export open: PDF, Word, print, copy for email or Word, and web page."
             /></a>
           </article>
 
@@ -126,7 +134,7 @@
             <div class="feature-text">
               <h3>Make it yours</h3>
               <p>
-                Twelve light and dark themes (this one is Mint), your own colours and fonts, shortcuts you can change, and an
+                Light and dark themes (this one is Mint), your own fonts, shortcuts you can change, and an
                 English or Greek interface.
               </p>
             </div>
@@ -152,7 +160,7 @@
               <li>Drafts that survive a restart</li>
               <li>F1 for help with every shortcut</li>
               <li>Settings you can export to another PC</li>
-              <li>Vim mode</li>
+              <li>A short guide to writing markdown</li>
             </ul>
           </div>
         </div>
@@ -169,15 +177,37 @@
             <li>Open it. If Windows shows a warning, <a href="#smartscreen">see below</a> for what to click.</li>
             <li>Pick English or Greek. Stylo installs for your user, without administrator rights, and opens.</li>
           </ol>
-          <p class="center">
-            <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
-          </p>
-          <div class="requirements">
-            <h3>System requirements</h3>
-            <ul>
-              <li>Windows 10 or 11, 64-bit</li>
-              <li>Microsoft Edge WebView2: Windows 10 and 11 already have it, and if it's missing, the installer adds it</li>
-            </ul>
+          <div class="downloads">
+            <div class="download-option windows">
+              <a class="download" href="https://github.com/XarhsSta/stylo-releases/releases/latest">Download for Windows</a>
+              <p class="download-note">Windows 10 and 11, 64-bit · about 10 MB · no administrator rights needed</p>
+            </div>
+            <div class="download-option linux">
+              <a class="download" href="#linux">Download for Linux (beta)</a>
+              <p class="download-note">Ubuntu, Debian, Fedora and more, 64-bit · AppImage, .deb or .rpm</p>
+            </div>
+          </div>
+          <div class="requirements-pair">
+            <div class="requirements">
+              <h3>Windows</h3>
+              <ul>
+                <li>Windows 10 or 11, 64-bit</li>
+                <li>Microsoft Edge WebView2: Windows 10 and 11 already have it, and if it's missing, the installer adds it</li>
+                <li>About 10 MB, no administrator rights needed</li>
+              </ul>
+            </div>
+            <div class="requirements linux" id="linux">
+              <h3>Linux (beta)</h3>
+              <div class="linux-files">
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.deb"><strong>.deb</strong> · Ubuntu, Debian, Mint</a>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.rpm"><strong>.rpm</strong> · Fedora, openSUSE</a>
+                <a href="https://github.com/XarhsSta/stylo-releases/releases/download/updater/Stylo-Linux.AppImage"><strong>AppImage</strong> · any other</a>
+              </div>
+              <ul>
+                <li>Ubuntu 22.04, Debian 12, Fedora 37 or newer, 64-bit</li>
+                <li>Not there yet on Linux: spelling suggestions and page numbers in PDFs</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -244,7 +274,7 @@
               </details>
               <details>
                 <summary>Is there a Mac or Linux version?</summary>
-                <p>No, only Windows 10 and 11.</p>
+                <p>Linux, yes: a beta, see <a href="#linux">Linux (beta)</a>. Mac, no.</p>
               </details>
               <details>
                 <summary>Is it open source?</summary>
@@ -335,5 +365,11 @@
         <p>© 2026 Haris Stasinos · Free to use and share, not open source.</p>
       </div>
     </footer>
+    <script>
+      // On Linux the Linux button comes first and is the main one; everywhere else, Windows.
+      if (/Linux/.test(navigator.userAgent) && !/Android/.test(navigator.userAgent)) {
+        document.documentElement.classList.add("on-linux");
+      }
+    </script>
   </body>
 </html>
